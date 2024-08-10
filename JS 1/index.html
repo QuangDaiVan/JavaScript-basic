@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS 1</title>
+</head>
+
+<body>
+    <p class="js1">Đây là 1 đoạn văn bản</p>
+    <p id="js1">Đây là 1 đoạn văn bản</p>
+    <script>
+        const textChange = () => {
+            document.querySelector(".js1").style.color = 'red'
+            document.getElementById("js1").style.color = 'red'
+        }
+    </script>
+    <button type="button" onclick="textChange()">click here</button>
+    <br>
+
+
+    <img id="bulb" src="./assets/bulboff.gif" alt="bulb" width="100px" height="180px">
+    <br>
+    <script>
+        const lightChange = (action) => {
+            let bulbImageSrc = "./assets/bulboff.gif"
+            if (action === 'on') {
+                bulbImageSrc = "./assets/bulbon.gif"
+            }
+            document.getElementById('bulb').src = bulbImageSrc
+        }
+    </script>
+    <button type="button" onclick="lightChange('on')">light on</button>
+    <button type="button" onclick="lightChange('off')">light off</button>
+
+</body>
+
+</html>
