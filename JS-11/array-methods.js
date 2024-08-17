@@ -1,6 +1,6 @@
 // có khá nhiều ethod - phương thức khi xử lý dữ liệu mảng tỏng js
 // dưới đây sẽ là vài phương thức quan trọng và được sử dụng trong thực tế
-
+// phần 1: push(), pop(), shift(), unshift(), forEach(), map(), filter(), find(), reduce(), some()
 let numbers = [1, 2, 3, 4, 5]
 
 // push(): thêm phần tử vào cuối cùng của mảng, thay đổi mảng cũ, càn truyền đối số
